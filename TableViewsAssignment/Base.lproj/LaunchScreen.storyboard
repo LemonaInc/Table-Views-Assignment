@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G24b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Anurati-Regular.otf">
+            <string>Anurati-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OW-S4-8xD">
+                                <rect key="frame" x="270.5" y="284" width="54" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="ZTX-m6-XRO"/>
+                                    <constraint firstAttribute="height" constant="99" id="mqB-Wp-1lJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="60"/>
+                                <color key="textColor" red="0.99427074189999998" green="0.36649852989999998" blue="0.39495891329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY1-11-oJl">
+                                <rect key="frame" x="210.5" y="284" width="54" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="GVZ-Xm-gSt"/>
+                                    <constraint firstAttribute="width" constant="54" id="nKs-K0-Ckp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="60"/>
+                                <color key="textColor" red="0.8004801869" green="0.63176465029999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVA-lH-AZj">
+                                <rect key="frame" x="183.5" y="284" width="49" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="lP6-BN-gmO"/>
+                                    <constraint firstAttribute="width" constant="49" id="vBf-ku-3mE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="60"/>
+                                <color key="textColor" red="0.85805243249999996" green="0.76235538719999996" blue="0.1031925008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0x-zt-NpA">
+                                <rect key="frame" x="123" y="284" width="49" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="2sY-56-IyS"/>
+                                    <constraint firstAttribute="height" constant="99" id="3aA-O7-Z4q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="60"/>
+                                <color key="textColor" red="0.76105856900000002" green="0.79019939900000002" blue="0.23242834209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-mK-qIS">
+                                <rect key="frame" x="97.5" y="284" width="40" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="dLL-mI-VvQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="x1O-az-xKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="60"/>
+                                <color key="textColor" red="0.25098039220000001" green="0.92941176469999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbZ-Q0-vEY">
+                                <rect key="frame" x="47.5" y="284" width="40" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7z7-Vc-1Lu"/>
+                                    <constraint firstAttribute="height" constant="99" id="g0X-GQ-vAF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="60"/>
+                                <color key="textColor" red="0.003477765713" green="0.9556896091" blue="0.89672237629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.1764705882" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nbZ-Q0-vEY" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6XU-oI-08T"/>
+                            <constraint firstItem="7OW-S4-8xD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="110" id="BxW-oN-KBm"/>
+                            <constraint firstItem="qY1-11-oJl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HjG-lw-D0i"/>
+                            <constraint firstItem="7OW-S4-8xD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="J6e-3Y-Lf0"/>
+                            <constraint firstItem="CMU-mK-qIS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ktr-4w-HIe"/>
+                            <constraint firstItem="j0x-zt-NpA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-40" id="aqj-6z-ZlT"/>
+                            <constraint firstItem="j0x-zt-NpA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bxa-nA-kAD"/>
+                            <constraint firstItem="CMU-mK-qIS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-70" id="kaB-IC-U3i"/>
+                            <constraint firstItem="KVA-lH-AZj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="l9w-5O-4Tl"/>
+                            <constraint firstItem="nbZ-Q0-vEY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-120" id="piR-cN-yjx"/>
+                            <constraint firstItem="qY1-11-oJl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="50" id="qG0-1L-Eex"/>
+                            <constraint firstItem="KVA-lH-AZj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="20" id="ufX-XC-UjH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>
