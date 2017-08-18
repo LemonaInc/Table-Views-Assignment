@@ -8,18 +8,39 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController  {
+    
+var studentName = String()
+var courseName0 = String()
+var courseName1 = String()
+var courseName2 = String()
+    
+    @IBOutlet var studentNameLabel: UILabel!
+    
+    @IBOutlet var courseNameLabel0: UILabel!
+    @IBOutlet var courseNameLabel1: UILabel!
+    @IBOutlet var courseNameLabel2: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-    }
+    
+    
+    override func viewWillAppear(_ animated: Bool){
+        studentNameLabel.text = studentName
+        
+        courseNameLabel0.text = courseName0
+        courseNameLabel1.text = courseName1
+        courseNameLabel2.text = courseName2
+        
+        
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
 
     /*
     // MARK: - Navigation
@@ -31,4 +52,3 @@ class DetailViewController: UIViewController {
     }
     */
 
-}

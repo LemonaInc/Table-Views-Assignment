@@ -22,13 +22,16 @@ class User {
     func getAverageGrade() -> Int {
         
         // Create for loop to get the average grade
-        var tempGrade = 0
+       
+        var originalGrade = 0
+        
         for course in courses {
             
             let currentGrade = course.grade
-            tempGrade = tempGrade + currentGrade
+            originalGrade = originalGrade + currentGrade
         }
-        return tempGrade / courses.count
-    }
+        return originalGrade / courses.count
+        
+        }
     
 }

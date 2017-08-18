@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHw-LW-K5E">
-                                <rect key="frame" x="173.5" y="34" width="49" height="99"/>
+                                <rect key="frame" x="173" y="34" width="49" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="2P2-gG-zWZ"/>
                                     <constraint firstAttribute="width" constant="49" id="BKd-Km-gjW"/>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haT-sz-onr">
-                                <rect key="frame" x="87.5" y="34" width="40" height="99"/>
+                                <rect key="frame" x="88" y="34" width="40" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="2Lp-3N-kmu"/>
                                     <constraint firstAttribute="width" constant="40" id="VON-Yn-bR7"/>
@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-ur-ezy">
-                                <rect key="frame" x="37.5" y="34" width="40" height="99"/>
+                                <rect key="frame" x="38" y="34" width="40" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="6Uw-DE-gvw"/>
                                     <constraint firstAttribute="width" constant="40" id="g5w-If-2Dd"/>
@@ -243,17 +243,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Nc4-qG-4E5"/>
                     <connections>
-                        <segue destination="eq9-fP-cvd" kind="show" identifier="detail" id="Te5-EQ-hRL"/>
+                        <segue destination="eq9-fP-cvd" kind="show" identifier="detailSegue" id="Te5-EQ-hRL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3S-0p-Ama" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="-106"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="2t3-Z0-2ux">
             <objects>
-                <viewController id="eq9-fP-cvd" sceneMemberID="viewController">
+                <viewController id="eq9-fP-cvd" customClass="DetailViewController" customModule="TableViewsAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Bl-co-0kE"/>
                         <viewControllerLayoutGuide type="bottom" id="sgJ-5o-4Eu"/>
@@ -262,16 +262,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCv-ta-Zsk">
-                                <rect key="frame" x="111" y="83" width="153" height="71"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-om-lIS">
+                                <rect key="frame" x="-92" y="-85" width="559" height="837"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="559" id="hiM-5I-GKx"/>
+                                    <constraint firstAttribute="height" constant="837" id="tH0-bF-mBn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="StudentName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOh-wX-pds">
+                                <rect key="frame" x="73" y="85" width="244" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHG-sG-4Gr">
+                                <rect key="frame" x="25" y="164" width="241" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJ6-6O-YOs">
+                                <rect key="frame" x="25" y="232" width="241" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqn-R7-CPS">
+                                <rect key="frame" x="302" y="233" width="48" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfV-Qu-dhK">
+                                <rect key="frame" x="25" y="296" width="241" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpe-Tx-JQo">
+                                <rect key="frame" x="302" y="297" width="48" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAP-8y-m6X">
+                                <rect key="frame" x="302" y="164" width="48" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Anurati-Regular" family="Anurati" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass3.png" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-2O-0AU">
+                                <rect key="frame" x="48" y="374" width="279" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="6UR-NB-uy4"/>
+                                    <constraint firstAttribute="width" constant="279" id="iFg-O0-NEB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PuO-2O-0AU" firstAttribute="centerX" secondItem="e3s-YE-wkg" secondAttribute="centerX" id="2UH-Gz-ZpT"/>
+                            <constraint firstItem="PuO-2O-0AU" firstAttribute="centerY" secondItem="e3s-YE-wkg" secondAttribute="centerY" constant="180" id="Y4N-VS-7ST"/>
+                            <constraint firstItem="J0h-om-lIS" firstAttribute="centerX" secondItem="e3s-YE-wkg" secondAttribute="centerX" id="ov8-T3-Avl"/>
+                            <constraint firstItem="J0h-om-lIS" firstAttribute="centerY" secondItem="e3s-YE-wkg" secondAttribute="centerY" id="pEM-Bw-uJE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="courseNameLabel0" destination="IHG-sG-4Gr" id="7ws-N7-3y6"/>
+                        <outlet property="courseNameLabel1" destination="iJ6-6O-YOs" id="zWv-GB-RJY"/>
+                        <outlet property="courseNameLabel2" destination="NfV-Qu-dhK" id="Vaq-me-YJ9"/>
+                        <outlet property="studentNameLabel" destination="BOh-wX-pds" id="fcO-fe-x6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQq-Av-o4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,6 +347,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background.png" width="1080" height="1080"/>
         <image name="Grass3.png" width="648" height="985"/>
         <image name="Line2.png" width="613" height="11"/>
         <image name="Strokes2.png" width="1049" height="1080"/>

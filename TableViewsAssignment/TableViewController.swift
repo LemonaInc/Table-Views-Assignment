@@ -12,6 +12,7 @@ class TableViewController: UITableViewController {
     
     var studentArray = [User]()
 
+   // var selectedUser: String!
     
     /// VIEW DID LOAD ///
     override func viewDidLoad() {
@@ -119,8 +120,10 @@ class TableViewController: UITableViewController {
             let currentUser = studentArray[indexPath.row]
             
             cell.StudentLabel.text = currentUser.name
+            
             cell.gradeLabel.text = " \(currentUser.getAverageGrade())"
-
+            
+            
             
             //let grade = grades[indexPath.row]
            // cell.gradeLabel.text = grade
@@ -129,8 +132,6 @@ class TableViewController: UITableViewController {
 
         }
         
-        
-        
         return UITableViewCell()
     
         
@@ -138,7 +139,13 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "detail", sender: self)
+        performSegue(withIdentifier: "detailSegue", sender: self)
+        
+       // var selectedUser = String()
+      //  selectedUser = self.tableViewData[indexPath.row]
+
+        
+
     }
     
 
@@ -192,13 +199,20 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+
+        if segue.identifier == "detailSegue" {
+            let vc = segue.destination as! DetailViewController
+            vc.studentName = ""
+            vc.courseName0 = "Networking"
+            vc.courseName1 = "Web Apps"
+            vc.courseName2 = "iOS"
         
-        if segue.identifier == "detail" {
-           // let vc = segue.destination as! DetailViewController
-          //  vc.user = selectedUser
+            
         }
     }
     
+    
+  
 
 }
 

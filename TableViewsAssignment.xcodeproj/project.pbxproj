@@ -177,7 +177,6 @@
 				EA10BC6A1F4504AF00E79233 /* Strokes2.png */,
 				EA10BC641F44F7DE00E79233 /* Line2.png */,
 				EA10BC581F44F32E00E79233 /* Grass2.png */,
-				EA10BC521F44EEEB00E79233 /* Anurati-Regular.otf */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -185,6 +184,7 @@
 		EA10BC611F44F6BC00E79233 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EA10BC521F44EEEB00E79233 /* Anurati-Regular.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
